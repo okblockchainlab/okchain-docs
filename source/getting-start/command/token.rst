@@ -18,7 +18,7 @@ Token attributes
 +------------------+-------------------+-------------------------------------------------------------+
 | Owner            | string(address)   | token owner                                                 |
 +------------------+-------------------+-------------------------------------------------------------+
-| Mintable         | Bool              | indicate whether whether to increase the supply of tokens   |
+| Mintable         | Bool              | indicate whether to increase the supply of tokens   |
 +------------------+-------------------+-------------------------------------------------------------+
 
 Dex supports the token issuance function. Commands are as follows:
@@ -67,8 +67,8 @@ Successful response:
 
 ::
 
-    okchaincli tx token issue --from alice --symbol bcoin -n 200000 -w 'bcoin' --desc 'blockchain coin' -b block --mintable  
-    # example  
+    okchaincli tx token issue --from alice --symbol bcoin -n 200000 -w 'bcoin' --desc 'blockchain coin' -b block --mintable
+    # example
     {
       "height": "340949",
       "txhash":     "02978378301B38883C5CA9E17997B5CC5701DED817BA8B516851B1F706BD2544",
@@ -293,7 +293,7 @@ Successful response:
 ::
 
       okchaincli tx token unfreeze --from alice --symbol okt --amount 0.1 -b block
-      
+
       # Example output
       {
         "height": "341129",
@@ -366,7 +366,7 @@ Successful response:
 ::
 
       okchaincli tx token multi-send --from alice --transfers '[{"to":"okchain106205vgqv4fnn0yqcq7y7j936pv4kznv99yw85","amount":"1okt,2btc-254"}]' -b block
-      
+
       # Example output
       {
         "height": "341487",

@@ -5,7 +5,9 @@ Proposal process
 ----------------
 
 | The overall process of a proposal is shown below: |image0|
+
 | Details:
+
 | 1. The proposer should pledge okt when initiating a proposal to
 prevent malicious initiation of a proposal. 2. The voting participants
 are bond okt holders, except for the following two cases:   a. the okt
@@ -24,13 +26,11 @@ the proposer on behalf of the delegator.
 Proposal types
 --------------
 
-OKChain offers 4 types of proposals for different purposes: 1. `Text
-Proposal <../governance/text.md>`__\ ： to obtain network views of a
-topic. 2. `Parameter Proposal <../governance/parameter.md>`__\ ： to
-change system parameters. 3. `DexList
-Proposal <../governance/dexlist.md>`__\ ： to help project teams list
-tokens. 4. `Software Upgrade Proposal <../governance/upgrade.md>`__\ ：
-to support whole network upgrade.
+OKChain offers 4 types of proposals for different purposes:
+1. `TextProposal <../governance/text.rst>`__\ ： to obtain network views of a topic.
+2. `Parameter Proposal <../governance/parameter.rst>`__\ ： tochange system parameters.
+3. `DexList Proposal <../governance/dexlist.rst>`__\ ： to help project teams list tokens.
+4. `Software Upgrade Proposal <../governance/upgrade.rst>`__\ ：to support whole network upgrade.
 
 Except for text proposals, there are four proposal stages, including
 initiation, deposit\_period, vote\_period and execution. Execution is

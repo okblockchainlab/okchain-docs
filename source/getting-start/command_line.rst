@@ -10,20 +10,20 @@ Connect to OKChain
 
    .. code:: bash
 
-       okchaincli config chain-id okchain 
+       okchaincli config chain-id okchain
 
 -  Set the output format of okchaincli request response
 
    .. code:: bash
 
-       okchaincli config output json    
-       okchaincli config indent true 
+       okchaincli config output json
+       okchaincli config indent true
 
 -  Configure RPC Interface
 
    .. code:: bash
 
-       okchaincli config node tcp://$RpcInterface  
+       okchaincli config node tcp://$RpcInterface
 
 Sending transactions to OKChain or query information requires a specific
 RPC Interface.
@@ -33,7 +33,7 @@ If you set up a full OKChain node locally, $RpcInterface can be
 
 .. code:: bash
 
-    okchaincli config node tcp://localhost:26657  
+    okchaincli config node tcp://localhost:26657
 
 Or any of the following address ports:
 
@@ -75,27 +75,27 @@ Or any of the following address ports:
 2. okchaincli user manual
 -------------------------
 
--  `account <command/account.md>`__
+-  `account <command/account.rst>`__
 
    account management operations
 
--  `token <command/token.md>`__
+-  `token <command/token.rst>`__
 
    token-related operations, including token issuance, freezing and
    unfreezing as well as transfer of token ownership
 
--  `send <command/send.md>`__
+-  `send <command/send.rst>`__
 
    transfer operations, including threshold signature transfers
 
--  `order <command/order.md>`__
+-  `order <command/order.rst>`__
 
    transaction order operations
 
--  `gov <command/gov.md>`__
+-  `gov <command/gov.rst>`__
 
    governance operations
 
--  `backend <command/backend.md>`__
+-  `backend <command/backend.rst>`__
 
 

@@ -1,4 +1,4 @@
-Tx orders
+Order
 =========
 
 Order attributes
@@ -154,7 +154,7 @@ Successful response:
 ::
 
     # example
-    okchaincli tx order cancel ID0000000054-0000 --from alice 
+    okchaincli tx order cancel ID0000000054-0000 --from alice
 
     # example return
     {

@@ -11,11 +11,16 @@ Transfer
 Parameter description
 ~~~~~~~~~~~~~~~~~~~~~
 
-\| **Name** \| **Type** \| **Description** \| \| :------: \| :------: \|
-:---------------------------------------------------: \| \| addr \|
-string \| recipient address \| \| amount \| string \| transfer amount,
-covering various cryptocurrencies separated by commas, eg. 1okt, 2bcoin
-\| \| from \| String \| token owner \|
++------------------+-------------------+-------------------------------------------------------------+
+| Name             | Type              | Description                                                 |
++==================+===================+=============================================================+
+| addr           | string              | recipient address                         |
++------------------+-------------------+-------------------------------------------------------------+
+| amount         | string              | transfer amount, covering various cryptocurrencies separated by commas, eg. 1okt, 2bcoin        |
++------------------+-------------------+-------------------------------------------------------------+
+| from           | string              | token owner   |
++------------------+-------------------+-------------------------------------------------------------+
+
 
 Example
 ~~~~~~~
@@ -98,16 +103,20 @@ database and stored as ``new_key_name``. All names provided via
    .. code:: bash
 
        okchaincli keys show -a p1p2p3
+
        okchaincli tx send cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl 100.1okt --from=alice
+
        okchaincli query account cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl
 
-   2.3. Multi-signature:
-   ~~~~~~~~~~~~~~~~~~~~~
+2.3. Multi-signature:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Create an unsigned transaction:
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create an unsigned transaction:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   Create an unsigned transaction ``unsignedTx.json`` ##### Example:
+   Create an unsigned transaction ``unsignedTx.json``
+
+Example:
 
    .. code:: bash
 
@@ -116,30 +125,52 @@ database and stored as ``new_key_name``. All names provided via
          --from=cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl \
          --generate-only > unsignedTx.json
 
-   p1, p2, p3 sign:
-   ^^^^^^^^^^^^^^^^
+p1, p2, p3 sign:
+^^^^^^^^^^^^^^^^
 
-   Example:
-   ''''''''
+Example:
 
-   | \`\`\`bash okchaincli tx sign
-   |  --multisig=cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl
-   |  --from=alice
-   |  --output-document=p1signature.json
-   |  unsignedTx.json
+   .. code:: bash
 
-| okchaincli tx sign
-|  --multisig=cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl
-|  --from=jack
-|  --output-document=p2signature.json
-|  unsignedTx.json
-``#### Create an aggregate signature:  Create an aggregate signature `signedTx.json` since the default threshold is set to 2 so that a transaction with p1p2 can be executed. ##### Example:``\ bash
-okchaincli tx multisign
-|  unsignedTx.json
-|  p1p2p3
-|  p1signature.json p2signature.json > signedTx.json
-``### 2.4. Execute a transaction signedTx.json： Execute a signed `signedTx.json` offline and query the balance for confirmation. #### Example:``\ bash
+       okchaincli tx sign
+        --multisig=cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl \
+        --from=alice \
+        --output-document=p1signature.json \
+        unsignedTx.json
+
+   .. code:: bash
+
+        okchaincli tx sign
+            --multisig=cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl \
+            --from=jack \
+            --output-document=p2signature.json \
+            unsignedTx.json
+
+Create an aggregate signature:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create an aggregate signature `signedTx.json` since the default threshold is set to 2 so that a transaction with p1p2 can be executed.
+
+Example:
+
+   .. code:: bash
+
+        okchaincli tx multisign \
+            unsignedTx.json \
+            p1p2p3 \
+            p1signature.json p2signature.json > signedTx.json
+
+
+
+2.4. Execute a transaction signedTx.json：
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Execute a signed `signedTx.json` offline and query the balance for confirmation.
+
+Example:
+
+   .. code:: bash
+
 okchaincli tx broadcast signedTx.json
 
 okchaincli query account cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl
-\`\`\`

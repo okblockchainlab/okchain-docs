@@ -53,8 +53,7 @@ Generate a mnemonic phrase for a public key
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Generate a bip39 mnemonic. For further details, please refer to
-[generate a mnemonic phrase]
-(../getting-start/command/account.html#bip39)
+`generate a mnemonic phrase <../getting-start/command/account.html#bip39>`__
 
 Query account balance
 ~~~~~~~~~~~~~~~~~~~~~
