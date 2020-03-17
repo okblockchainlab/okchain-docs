@@ -171,6 +171,6 @@ Example:
 
    .. code:: bash
 
-okchaincli tx broadcast signedTx.json
+        okchaincli tx broadcast signedTx.json
 
-okchaincli query account cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl
+        okchaincli query account cosmos1553hrs03kl2tlq47d9f6j477xdjp362l2cfetl
