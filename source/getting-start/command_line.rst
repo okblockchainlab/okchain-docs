@@ -75,27 +75,27 @@ Or any of the following address ports:
 2. okchaincli user manual
 -------------------------
 
--  `account <command/account.rst>`__
+-  `account <command/account.html>`__
 
    account management operations
 
--  `token <command/token.rst>`__
+-  `token <command/token.html>`__
 
    token-related operations, including token issuance, freezing and
    unfreezing as well as transfer of token ownership
 
--  `send <command/send.rst>`__
+-  `send <command/send.html>`__
 
    transfer operations, including threshold signature transfers
 
--  `order <command/order.rst>`__
+-  `order <command/order.html>`__
 
    transaction order operations
 
--  `gov <command/gov.rst>`__
+-  `gov <command/gov.html>`__
 
    governance operations
 
--  `backend <command/backend.rst>`__
+-  `backend <command/backend.html>`__
 
 

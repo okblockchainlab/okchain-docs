@@ -1,4 +1,4 @@
-Transfer
+Send
 ========
 
 1. Transfer

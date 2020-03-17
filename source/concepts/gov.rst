@@ -27,10 +27,10 @@ Proposal types
 --------------
 
 OKChain offers 4 types of proposals for different purposes:
-1. `TextProposal <../governance/text.rst>`__\ ： to obtain network views of a topic.
-2. `Parameter Proposal <../governance/parameter.rst>`__\ ： tochange system parameters.
-3. `DexList Proposal <../governance/dexlist.rst>`__\ ： to help project teams list tokens.
-4. `Software Upgrade Proposal <../governance/upgrade.rst>`__\ ：to support whole network upgrade.
+1. `TextProposal <../governance/text.html>`__\ ： to obtain network views of a topic.
+2. `Parameter Proposal <../governance/parameter.html>`__\ ： tochange system parameters.
+3. `DexList Proposal <../governance/dexlist.html>`__\ ： to help project teams list tokens.
+4. `Software Upgrade Proposal <../governance/upgrade.html>`__\ ：to support whole network upgrade.
 
 Except for text proposals, there are four proposal stages, including
 initiation, deposit\_period, vote\_period and execution. Execution is
